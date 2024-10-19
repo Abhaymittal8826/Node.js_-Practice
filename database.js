@@ -24,10 +24,9 @@ const userSchema = new mongoose.Schema({
   email: String,
 });
 
-// Create a model based on the schema
 const User = mongoose.model('User', userSchema);
 
-// Example of creating a new user
+  
 const createUser = async () => {
   const newUser = new User({ name: 'John Doe', email: 'john@example.com' });
   await newUser.save();

@@ -14,7 +14,7 @@ router.post('/users', async (req, res) => {
   }
 });
 
-// GET route to retrieve all users
+// GET route
 router.get('/users', async (req, res) => {
   try {
     const users = await User.find();

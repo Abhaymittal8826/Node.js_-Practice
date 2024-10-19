@@ -18,8 +18,7 @@ mongoose.connection.on('error', (err) => {
   console.error(`Mongoose connection error: ${err}`);
 });
 
-
-// Define a schema
+  
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
